@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Shawn Maphoto"/>
+    <meta name="description" content="Pixel Art Maker"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="jquery.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h3><a href="index.html">Pixel Art</a></h3>
+    </header>
+    <div id="main"> 
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <div id="designProperties">
+        
+        <div class="properties gridSize">
+            <h4>Choose Grid Size</h4>
+            <form id="sizePicker">
+                <p>
+                    <label for="inputHeight">Grid Height:</label><br />
+                    <input type="number" id="inputHeight" name="height" min="1" max="20" value="1">
+                </p>
+                    
+                <p>
+                    <label for="inputWidth">Grid Width:</label><br />
+                    <input type="number" id="inputWeight" name="width" min="1" max="53" value="1">
+                </p>
+                <span id="errorMessage">* Max Height : 20 and Max Width : 53</span>   
+                <p>
+                    <input id="submit" type="button" value="submit">
+                </p>
+                    
+            </form>
+        </div>
+        
+        <div class="properties designTools">
+            <p>
+                <label for="colorPicker">Pick A Color</label><br>
+                <input type="color" id="colorPicker">
+            </p>
+            <p>
+                <input type="button" value="Clear Grid" id="clearGrid">
+            </p>
+            <p>
+                <input type="button" value="Eraser" id="eraser">
+            </p>
+            <p>
+                <input type="button" value="New Grid" id="newGrid">
+            </p>
+        </div>
+    </div>
+    
+
+    <div id="designCanvas">
+        <h2>Design Canvas</h2>
+        <table id="pixelCanvas"></table>
+    </div>
+    
+</div>
+<footer>
+    <p>Design by Thato M</p>
+</footer>
+
+<script src="design.js"></script>
+</body>
+</html>
