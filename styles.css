@@ -10,7 +10,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li, span {
-    font-family: Monoton, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, footer p {
+    font-family: Monoton, Arial, Helvetica, sans-serif; 
 }
 
 header {
@@ -56,7 +60,7 @@ h1 {
 }
 
 .properties {
-    height: 260px;
+    
     width: 150px; 
 }
 
@@ -115,4 +119,40 @@ tr {
 
 footer p {
     text-align: center;
+}
+
+
+@media (max-width: 1024px){
+    #designProperties {
+     position: relative;
+     right: 0;
+     margin-left: 5%;
+     margin-bottom: 5px;
+   }
+
+   .properties {
+    width: 90%;
+     
+  }
+
+   #designCanvas {
+    width: 95%;
+    margin-left: 2.5%;
+    
+}
+
+input {
+    height: 25px;
+}
+
+input[type=button], input[type=color]{
+    height: 30px;
+}
+}
+
+@media (min-width : 680px) and (max-width: 1024px){
+    .properties {
+    width: 250px;
+     
+  }
 }

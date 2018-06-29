@@ -68,7 +68,9 @@ $('#submit').click(function(evl){
      * makeGrid() function can create a grid of any size.
      */
     if(numRows > 20 || numCols > 53){
-        $('#errorMessage').css('display', 'inline');
+        $('#errorMessage').text('* Max Height : 20 and Max Width : 53').css('display', 'inline');
+    } else if(numRows < 1 || numCols < 1){
+        $('#errorMessage').text('* Min Height : 1 and Min Width : 1').css('display', 'inline');
     } else {
         $('#errorMessage').hide();
         makeGrid(numRows, numCols);
